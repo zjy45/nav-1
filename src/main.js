@@ -101,11 +101,11 @@ window.onbeforeunload = () => {
 
 }
 
-$(document).on('keypress', (e) => {
-    const {key} = e
-    for (let i = 0; i < siteHash.length; i++) {
-        if (siteHash[i].icon.toLowerCase() === key) {
-            window.open(siteHash[i].url, '_self')
-        }
-    }
-})
+// $(document).on('keypress', (e) => {
+//     const {key} = e
+//     for (let i = 0; i < siteHash.length; i++) {
+//         if (siteHash[i].icon.toLowerCase() === key) {
+//             window.open(siteHash[i].url, '_self')
+//         }
+//     }
+// })
