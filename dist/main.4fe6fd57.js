@@ -187,14 +187,13 @@ window.onbeforeunload = function () {
     localStorage.setItem('siteList', JSON.stringify(siteHash));
 };
 
-$(document).on('keypress', function (e) {
-    var key = e.key;
-
-    for (var i = 0; i < siteHash.length; i++) {
-        if (siteHash[i].icon.toLowerCase() === key) {
-            window.open(siteHash[i].url, '_self');
-        }
-    }
-});
+// $(document).on('keypress', (e) => {
+//     const {key} = e
+//     for (let i = 0; i < siteHash.length; i++) {
+//         if (siteHash[i].icon.toLowerCase() === key) {
+//             window.open(siteHash[i].url, '_self')
+//         }
+//     }
+// })
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=/main.acd9fa2b.map
+//# sourceMappingURL=/main.4fe6fd57.map
